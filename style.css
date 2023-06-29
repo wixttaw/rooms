@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    height: 100px;
+    border-bottom: 1px solid #E0E0E0;
+}
+header a {
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+}
+header > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 2rem;
+}
+.headerNavigation {
+    display: flex;
+    gap: 70px;
+}
+.headerCart{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mainPage {
+    padding-top: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+.mainPage img {
+    height: 90vh;
+    width: 100%;
+}
+
+.designPage {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+.designContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.designContainer div:first-child{
+    font-size: 48px;
+    color: #1A1A1A;
+    font-weight: 400;
+}
+.designContainer div{
+    color: #AAAAAA;
+    font-size: 24px;;
+}
+
+.roomsWrapper {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+.roomsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.roomsContainer > div p {
+    font-size: 20px;
+}
+
+.peopleWrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.peopleWrapper img {
+    width: 100%;
+}
+
+/* features block */
+.featuresWrapper{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+.featuresContainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.featuresContainer h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+.featuresContainer > p {
+    color: #46856E;
+}
+.featuresBlocks{
+    display: flex;
+    gap: 40px;
+}
+.featuresBlocks > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.featuresBlocks > div > img {
+    align-self: center;
+}
+.featuresBlocks > div p {
+    color: #AAAAAA;
+}
+
+/* review section */
+.reviewContainer{
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url('images/reviewBackground.jpg');
+}
+.reviewList {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 15%;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.review > img {
+    align-self: flex-start;
+}
+.review p{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+/* sales */
+.salesWrapper {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.salesContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+.salesContainer > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sale img {
+    max-width: 45%;
+}
+.sale > div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sale > div p {
+    color: #AAAAAA;
+    line-height: 24px;
+}
+.sale {
+    margin-bottom: 2rem;
+}
+
+/* office */
+.officeWrapper {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.officeContainer{
+    width: 90%;
+    margin: 0 auto;
+}
+.officeContainer img {
+    width: 100%;
+}
+
+/* work */
+.work {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+.work > div h1:first-child{
+    color: #AAAAAA;
+    line-height: 42px;
+    margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+    .headerCart {
+        display: none;
+
+    }
+    header >div {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .headerNavigation {
+        gap: 20px;
+    }
+    .mainPage img {
+       height: auto; 
+    }
+    .designContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .designContainer div:first-child {
+        font-size: 40px;
+    }
+    .designContainer div:nth-child(2) {
+        display: flex;
+        width: 500px;
+        justify-content: center;
+        margin: auto;
+    }
+    .roomsContainer {
+        gap: 0;
+    }
+    .roomsContainer > div {
+        padding: 1rem;
+    }
+    .roomsContainer > div img {
+        width: 100%;
+    }
+    .roomsContainer > div p {
+       text-align: center;
+    }
+    .featuresContainer h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .featuresBlocks {
+        flex-direction: column;
+    }
+    .work > div h1:first-child {
+       line-height: 36px; 
+    }
+    .sale > div{
+        padding-left: 25px;
+    }
+    .sale > div p {
+        line-height: 19px;
+    }
+    .featuresBlocks > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+}
+    .reviewList {
+        padding: 2rem;
+    }
+    .reviewContainer {
+        height: fit-content;
+        background-position: center;
+    }
+    .sale {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sale > div {
+        align-items: center;
+    }
+    .sale img {
+        max-width: 70%;
+        order: -1;
+    }.designPage {
+        margin-bottom: 0;
+    }
+
+}
